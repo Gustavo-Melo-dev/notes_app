@@ -67,7 +67,7 @@ const Note = () => {
                             <ArrowLeft />
                         </Link>
                     </h3>
-                    {noteId != 'add' && <button onClick={deleteNote}><TrashIcon /></button>}
+                    {noteId !== 'add' && <button onClick={deleteNote}><TrashIcon /></button>}
                 </div>
         
                 <textarea onChange={(e) => { setNote({ ...note, 'body': e.target.value}) }} placeholder="Edit note" value={note?.body} required></textarea>
